@@ -1,0 +1,33 @@
+{
+  "name": "snapdown",
+  "version": "0.0.1",
+  "description": "A command line tool to download Snapchat memories on your system.",
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/de-ar/snapdown.git"
+  },
+  "keywords": [
+    "Snapchat",
+    "memories",
+    "download",
+    "cli"
+  ],
+  "author": "Arslan Ahmad",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/de-ar/snapdown/issues"
+  },
+  "homepage": "https://github.com/de-ar/snapdown#readme",
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
