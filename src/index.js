@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+
+console.clear();
+
 const process = require('process');
 const niceTry = require('nice-try');
 const inquirer = require('inquirer');
@@ -73,7 +76,7 @@ try {
       else if (downloadables === 'videos only') downloadVideosOnly(urls, dist);
     } else {
       console.log(
-        'memories_history.json NOT Found!\nPlease make sure you are in the right directory and \'memories_history.json\' exists.'
+        "memories_history.json NOT Found!\nPlease make sure you are in the right directory and 'memories_history.json' exists."
       );
       process.exit(1);
     }
