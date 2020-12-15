@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-
-console.clear();
-
 const process = require('process');
 const niceTry = require('nice-try');
 const inquirer = require('inquirer');
