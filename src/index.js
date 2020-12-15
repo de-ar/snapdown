@@ -65,7 +65,7 @@ try {
       asnwer = await inquirer.prompt({
         type: 'list',
         name: 'downloadables',
-        message: 'What do you want to download',
+        message: 'What do you want to download?',
         choices: ['both', 'images only', 'videos only'],
         default: 0,
       });
