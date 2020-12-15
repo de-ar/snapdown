@@ -1,9 +1,11 @@
 {
   "name": "snapdown",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A command line tool to download Snapchat memories on your system.",
   "main": "./src/index.js",
   "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src"
   },
@@ -28,6 +30,10 @@
     "nodemon": "^2.0.6"
   },
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "axios": "^0.21.0",
+    "cli-progress": "^3.8.2",
+    "download": "^8.0.0",
+    "inquirer": "^7.3.3",
+    "nice-try": "^2.1.0"
   }
 }
