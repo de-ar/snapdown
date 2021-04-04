@@ -1,22 +1,21 @@
 name: NPM Publish
 
-on:
-  push:
-    branches: [master]
-    types: [created]
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Clone Ubuntu Latest
+        uses: actions/checkout@v2
+      - name: Install NodeJS
+        uses: actions/setup-node@v1
         with:
           node-version: 12
       - run: npm i -g yarn
       - run: yarn
 
-  publish-npm:
+  npm-publish:
     needs: build
     runs-on: ubuntu-latest
     steps:
