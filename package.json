@@ -1,6 +1,6 @@
 {
   "name": "snapdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A command line tool to download Snapchat memories on your system.",
   "keywords": [
     "Snapchat",
@@ -18,24 +18,24 @@
   },
   "license": "WTFPL",
   "author": "Arslan Ahmad",
-  "main": "./src/index.js",
+  "main": "index.js",
   "bin": {
-    "snapdown": "./src/index.js"
+    "snapdown": "index.js"
   },
   "scripts": {
-    "dev": "nodemon ./src/index.js",
-    "start": "node ./src/index.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "lint": "prettier -c . || prettier -w ."
   },
   "dependencies": {
     "axios": "^0.21.0",
     "cli-progress": "^3.8.2",
     "download": "^8.0.0",
-    "inquirer": "^8.0.0",
+    "inquirer": "^8.1.1",
     "nice-try": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6",
-    "prettier": "^2.2.1"
+    "prettier": "^2.3.2"
   }
 }

@@ -21,7 +21,7 @@ try {
       })
 
       if (!answer.continue) process.exit(0)
-      const data = await niceTry.promise(async () =>
+      const data = await niceTry.promise(() =>
         JSON.parse(fs.readFileSync('memories_history.json')),
       )
 
