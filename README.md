@@ -11,5 +11,7 @@ NOTE: Do NOT share those files with anyone. They contain highly confidential dat
 Open shell and change working directory to where `.json` file is located. and execute following command
 
 ```bash
-$ npx snapdown
+npx snapdown
 ```
+
+P.S. Node version > 10 must be installed on your machine.
