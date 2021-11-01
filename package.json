@@ -31,7 +31,7 @@
     "lint": "prettier -c . || prettier -w ."
   },
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.3",
     "cli-progress": "^3.8.2",
     "download": "^8.0.0",
     "inquirer": "^8.1.1",
